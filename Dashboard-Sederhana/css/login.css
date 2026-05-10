@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+  --font-family: "Inter", sans-serif;
+}
+
+:root[data-theme="light"] {
+  --text: #050f07;
+  --background: #f7fdf8;
+  --primary: #40c44b;
+  --secondary: #92d0dd;
+  --accent: #6898cf;
+}
+:root[data-theme="dark"] {
+  --text: #f0faf2;
+  --background: #020803;
+  --primary: #3bbf46;
+  --secondary: #22606d;
+  --accent: #306097;
+}
+
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+
+h1 {
+  padding-bottom: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+input {
+  padding: 1em;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--background);
+  border-bottom: 2px solid var(--text);
+}
+
+.cta-password{
+  padding-top: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.lupa-password{
+  padding-left: 11em;
+}
+
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+
+button {
+  padding: 1em;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  min-width: 300px;
+  font-weight: bold;
+  background-color: var(--accent);
+  color: var(--text);
+}
+
+button:hover {
+  cursor: pointer;
+}

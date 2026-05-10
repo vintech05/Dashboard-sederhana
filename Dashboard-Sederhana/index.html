@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="form">
+      <section>
+     <h1 id="form-title">Selamat Datang</h1>
+ 
+      <form action="dashboard.html" method="post" novalidate>
+ 
+        <div>
+          <label for="email">Email address</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            autocomplete="email"
+            placeholder="Email"
+            aria-required="true"
+            aria-describedby="email-hint"
+          />
+          
+        </div>
+ 
+        <div>
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            autocomplete="current-password"
+            placeholder="Password"
+            aria-required="true"
+            aria-describedby="pw-hint"
+          />
+
+          <div class="cta-password">
+            <a href="#" class="lupa-password">Lupa Password?</a>
+          </div>
+
+        </div>
+
+        
+        <div class="cta-form">
+          <div>
+            <button type="submit">Masuk</button>
+          </div>
+
+          <div class="cta-register">
+            <a href="#">Belum Punya Akun?</a>
+          </div>
+
+        </div>
+        
+ 
+      </form>
+    </section>
+    </main>
+    <script type="module" src="js/login.js"></script>
+  </body>
+</html>
