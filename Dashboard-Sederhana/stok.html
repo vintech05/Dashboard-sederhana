@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/stok.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>informasi Bahan Ajar</title>
 </head>
+  <header>
+        <nav>
+                <ul>
+                    <li><a href="./stok.html">Informasi Bahan Ajar</a></li>
+                    <li><a href="#">Tracking Pengiriman</a></li>
+                    <div class="dropdown">
+                        <li><a href="#" class="activate-dropdown">Laporan</a></li>
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+fill="currentColor" viewBox="0 0 24 24" >
+<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+<path d="M17.35 8H6.65c-.64 0-.99.76-.56 1.24l5.35 6.11c.3.34.83.34 1.13 0l5.35-6.11C18.34 8.76 18 8 17.36 8Z"></path>
+</svg>
+                        <ul class="option">
+                            <li><a href="#">Monitoring Progress DO Bahan Ajar</a></li>
+                            <li><a href="#">Rekap Bahan Ajar</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#">Histori Transaksi Bahan Ajar</a></li>
+                </ul>
+        </nav>
+    </header>
+
 <body>
+    <main>
+
+        <section>
+      <h1>Informasi Stok Bahan Ajar</h1>
     
+      <table>
+        <thead>
+          <tr>
+            <th>Kode Lokasi</th>
+            <th>Kode Barang</th>
+            <th>Nama Barang</th>
+            <th>Jenis Barang</th>
+            <th>Edisi</th>
+            <th>Stok</th>
+          </tr>
+        </thead>
+        <tbody id="stok-body"></tbody>
+      </table>
+    </section>
+    
+    <section>
+      <h2>Tambah Stok Baru</h2>
+      <div class="add-stok-form">
+        <input type="text" id="kodeLokasi" placeholder="Kode Lokasi" />
+        <input type="text" id="kodeBarang" placeholder="Kode Barang" />
+        <input type="text" id="namaBarang" placeholder="Nama Barang" />
+        <input type="text" id="jenisBarang" placeholder="Jenis Barang" />
+        <input type="text" id="edisi" placeholder="Edisi" />
+        <input type="number" id="stok" placeholder="Stok" />
+        <button id="tambah-btn">Tambah</button>
+      </div>
+    </section>
+    </main>
+
+<script type="module" src="./js/stok.js"></script>
 </body>
 </html>

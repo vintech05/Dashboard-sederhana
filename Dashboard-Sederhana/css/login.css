@@ -96,3 +96,44 @@ button {
 button:hover {
   cursor: pointer;
 }
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-box {
+  background: var(--background);
+  color: var(--text);
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.modal-actions button:first-child {
+  background-color: var(--secondary);
+}
+
+.modal-actions button:last-child {
+  background-color: var(--primary);
+  color: var(--background);
+}

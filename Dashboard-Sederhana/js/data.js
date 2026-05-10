@@ -1,4 +1,4 @@
-var dataPengguna = [
+export var dataPengguna = [
   {
     id: 1,
     nama: "Rina Wulandari",
@@ -41,7 +41,7 @@ var dataPengguna = [
   }
 ];
 
-var dataBahanAjar = [
+export var dataBahanAjar = [
   {
     kodeLokasi: "0TMP01",
     kodeBarang: "ASIP4301",
@@ -89,7 +89,7 @@ var dataBahanAjar = [
   }
 ];
 
-var dataTracking = {
+export var dataTracking = {
   "2023001234": {
     nomorDO: "2023001234",
     nama: "Rina Wulandari",
@@ -114,7 +114,7 @@ var dataTracking = {
     ]
   },
   "2023005678": {
-    nomorDO: "2023001234",
+    nomorDO: "2023005678",
     nama: "Agus Pranoto",
     status: "Dikirim",
     ekspedisi: "Pos Indonesia",
