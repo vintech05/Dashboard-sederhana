@@ -1,4 +1,7 @@
 import { dataBahanAjar } from "./data.js";
+import { initTheme } from "./theme.js";
+
+initTheme();
 
 const tbody = document.getElementById('stok-body');
 const tambahBtn = document.getElementById('tambah-btn');

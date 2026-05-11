@@ -1,5 +1,7 @@
 import { dataTracking } from "./data.js";
-console.log(dataTracking)
+import { initTheme } from "./theme.js";
+
+initTheme();
 
 const greetings = document.querySelector('.greetings');
 const dropdown = document.querySelector('.dropdown')

@@ -157,3 +157,11 @@ th {
   color: var(--text);
   padding: 0.25rem 1rem;
 }
+
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0;
+}
