@@ -41,6 +41,20 @@ export var dataPengguna = [
   }
 ];
 
+export var upbjjList = ["Jakarta", "Surabaya", "Makassar", "Padang", "Denpasar"];
+
+export var kategoriList = ["MK Wajib", "MK Pilihan", "Praktikum", "Problem-Based"];
+
+export var pengirimanList = [
+  { kode: "REG", nama: "JNE Regular (3-5 hari)" },
+  { kode: "EXP", nama: "JNE Express (1-2 hari)" }
+];
+
+export var paket = [
+  { kode: "PAKET-UT-001", nama: "PAKET IPS Dasar", isi: ["EKMA4216", "ASIP4301"], harga: 120000 },
+  { kode: "PAKET-UT-002", nama: "PAKET IPA Dasar", isi: ["BIOL4211", "PAUD4401"], harga: 140000 }
+];
+
 export var dataBahanAjar = [
   {
     kodeLokasi: "0TMP01",
@@ -49,7 +63,13 @@ export var dataBahanAjar = [
     jenisBarang: "BMP",
     edisi: "2",
     stok: 548,
-    cover: "img/pengantar_komunikasi.jpg"
+    cover: "img/pengantar_komunikasi.jpg",
+    // field baru
+    safety: 100,
+    kategori: "MK Wajib",
+    upbjj: "Jakarta",
+    harga: 65000,
+    catatanHTML: "<em>Edisi 2024, cetak ulang</em>"
   },
   {
     kodeLokasi: "0JKT01",
@@ -58,7 +78,13 @@ export var dataBahanAjar = [
     jenisBarang: "BMP",
     edisi: "3",
     stok: 392,
-    cover: "img/manajemen_keuangan.jpg"
+    cover: "img/manajemen_keuangan.jpg",
+    // field baru
+    safety: 50,
+    kategori: "MK Wajib",
+    upbjj: "Jakarta",
+    harga: 60000,
+    catatanHTML: "<strong>Cover baru</strong>"
   },
   {
     kodeLokasi: "0SBY02",
@@ -66,8 +92,14 @@ export var dataBahanAjar = [
     namaBarang: "Kepemimpinan",
     jenisBarang: "BMP",
     edisi: "1",
-    stok: 278,
-    cover: "img/kepemimpinan.jpg"
+    stok: 12,
+    cover: "img/kepemimpinan.jpg",
+    // field baru
+    safety: 20,
+    kategori: "MK Pilihan",
+    upbjj: "Surabaya",
+    harga: 55000,
+    catatanHTML: "Stok <i>menipis</i>, prioritaskan reorder"
   },
   {
     kodeLokasi: "0MLG01",
@@ -75,8 +107,14 @@ export var dataBahanAjar = [
     namaBarang: "Mikrobiologi Dasar",
     jenisBarang: "BMP",
     edisi: "2",
-    stok: 165,
-    cover: "img/mikrobiologi.jpg"
+    stok: 0,
+    cover: "img/mikrobiologi.jpg",
+    // field baru
+    safety: 15,
+    kategori: "Praktikum",
+    upbjj: "Makassar",
+    harga: 80000,
+    catatanHTML: "Stok <strong>habis</strong>, segera reorder"
   },
   {
     kodeLokasi: "0UPBJJBDG",
@@ -85,7 +123,13 @@ export var dataBahanAjar = [
     jenisBarang: "BMP",
     edisi: "4",
     stok: 204,
-    cover: "img/paud_perkembangan.jpg"
+    cover: "img/paud_perkembangan.jpg",
+    // field baru
+    safety: 30,
+    kategori: "MK Wajib",
+    upbjj: "Padang",
+    harga: 70000,
+    catatanHTML: "Edisi revisi <em>2023</em>"
   }
 ];
 
@@ -149,4 +193,3 @@ export var dataTracking = {
     ]
   }
 };
-
